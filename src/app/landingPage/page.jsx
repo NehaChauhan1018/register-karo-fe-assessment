@@ -1,10 +1,11 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/landingPage/ContactForm";
+import EasySteps from "@/components/landingPage/easysteps/EasySteps";
 import React from "react";
 
 const LandingPage = () => {
   return (
-    <div>
-      <div className="w-[95%] m-auto">
+    <div className="flex flex-col gap-6">
+      <section className="w-[95%] m-auto">
         <div className="bg-[url('/landingBg.png')] h-[717px] bg-no-repeat bg-cover grid grid-cols-3">
           <div className="col-span-2 pt-6 px-6 w-[80%] my-24 mx-auto text-white flex flex-col gap-6">
             <h1 className="text-4xl font-bold ">
@@ -33,10 +34,11 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="col-span-1">
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
-      </div>
+      </section>
+      <EasySteps/>
     </div>
   );
 };
