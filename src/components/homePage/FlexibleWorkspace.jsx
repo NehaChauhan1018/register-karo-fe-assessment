@@ -10,12 +10,12 @@ const WorkspaceCard = ({
 }) => {
   return (
     <div
-      className={`w-full h-full rounded-lg flex flex-col col-span-1 justify-between ${
+      className={`w-[full] h-full  rounded-lg flex flex-col col-span-1 justify-between ${
         isLastCard ? "bg-[#333333] text-white" : "bg-white"
       }`}
     >
       <div>
-        <img src={src} className="rounded-lg w-full h-auto" alt={title} />
+        <img src={src} className="rounded-lg " />
         <div className="p-3">
           <div>
             <h3 className="text-lg font-semibold mb-4">{title}</h3>
@@ -29,11 +29,7 @@ const WorkspaceCard = ({
             <div className="flex flex-col gap-4 mb-6 text-xs">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center">
-                  <img
-                    src={feature.icon}
-                    alt="icon"
-                    className="w-4 h-4 mr-2"
-                  />
+                  <img src={feature.icon} alt="icon" className="w-4 h-4 mr-2" />
                   <span>{feature.info}</span>
                 </div>
               ))}
@@ -42,12 +38,12 @@ const WorkspaceCard = ({
         </div>
       </div>
       <div className="p-3">
-        <h4 className="text-base font-normal text-[#008385] mb-4">{price}</h4>
-        <div className="flex gap-2 items-center justify-center">
+        <h4 className="text-base font-normal text-[#008385] mb-4 ">{price}</h4>
+        <div className="flex gap-2  items-center justify-center">
           <button className="bg-[#2962FF] text-white rounded-full text-xs px-3 py-2">
             Get a quote
           </button>
-          <button className="bg-transparent border border-[#2962FF] text-[#2962FF] px-3 py-2 rounded-full text-xs">
+          <button className="bg-transparent border border-[#2962FF] text-[#2962FF] px-3 py-2 rounded-full text-xs ">
             Learn more
           </button>
         </div>
@@ -58,18 +54,18 @@ const WorkspaceCard = ({
 
 const FlexibleWorkspace = () => {
   return (
-    <section className="w-[90%] md:w-[85%] mx-auto ">
-      <div className="mb-8 text-left">
-        <h2 className="text-lg md:text-xl text-[#393939] font-normal pt-10">
+    <section className="w-[85%] mx-auto ">
+      <div className="mb-8 text-left ">
+        <h2 className="text-xl text-[#393939] font-normal pt-10">
           Flexible workspace designed around your needs
         </h2>
       </div>
-      <div className="flex justify-center gap-2 md:gap-4 mb-6 border border-gray-300 rounded-full bg-white flex-wrap">
+      <div className="flex justify-center gap-4 mb-6 border border-gray-300 rounded-full bg-white">
         {["Office Space", "Coworking", "Virtual Offices", "Meeting rooms"].map(
           (label, index) => (
             <button
               key={index}
-              className={`w-full md:w-[300px] h-[40px] md:h-[52px] rounded-full ${
+              className={`w-[300px] h-[52px] rounded-full ${
                 index === 0 ? "bg-[#4CAF50] text-white" : "bg-transparent"
               }`}
             >
@@ -78,11 +74,11 @@ const FlexibleWorkspace = () => {
           )
         )}
       </div>
-      <p className="text-left text-[#393939] mb-3 text-xs md:text-sm font-light">
+      <p className="text-left text-[#393939] mb-3 text-sm font-light">
         Our flexible, fully-customisable office rentals are available by the
         hour, day, or as long as you need.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-5 gap-6">
         {[
           {
             src: "/flexibleWS1.png",
@@ -170,4 +166,3 @@ const FlexibleWorkspace = () => {
 };
 
 export default FlexibleWorkspace;
-
