@@ -18,7 +18,7 @@ const MainHome = () => {
           placeholder="Search city"
           className="flex-grow bg-white outline-none text-black placeholder-gray-600 p-4 relative"
         />
-        <span className="text-[#2962FF] underline cursor-pointer ml-2 bg-white absolute right-" >
+        <span className="text-[#2962FF] underline cursor-pointer ml-2 bg-white absolute right-36" >
           Search Nearby
         </span>
         <button className="bg-[#2962FF] text-white font-medium px-6 py-2 rounded-full ml-4">

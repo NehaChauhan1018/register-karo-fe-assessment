@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const details = [
@@ -40,9 +41,9 @@ const details = [
 
 const Discover = () => {
   return (
-    <section className="w-[80%] mx-auto my-16">
-      <div className="grid grid-cols-2 gap-8 mb-16">
-        <div className="w-[80%] m-auto">
+    <section className="w-[90%] md:w-[80%] mx-auto my-8 md:my-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 md:mb-16">
+        <div className="w-full md:w-[80%] mx-auto mb-8 md:mb-0">
           <img
             src="/discovery.png"
             alt="Workspace Solution"
@@ -50,24 +51,24 @@ const Discover = () => {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="text-[#393939] text-4xl mb-4 pr-20 font-normal">
+          <h2 className="text-[#393939] text-2xl md:text-4xl mb-4 md:pr-20 font-normal">
             Discover the Ultimate Workspace Solution
           </h2>
-          <p className="text-[#393939] text-xs font-light">
+          <p className="text-[#393939] text-sm md:text-xs font-light mb-8 md:mb-0">
             From solo entrepreneurs to growing teams, find everything you need
             under one roof. Whether it's pay-per-use plans or fixed desks, our
             flexible options cater to your unique work style, ensuring seamless
             productivity and success.
           </p>
-          <div className="grid grid-cols-2 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {details.map((item, index) => (
-              <div key={index} className="flex items-start gap-2 mt-10">
-                <div className="w-[10px] h-[4px] bg-[#393939] rounded-full mt-1 flex items-center"></div>
+              <div key={index} className="flex items-start gap-2 mt-6 md:mt-10">
+                <div className="w-[10px] h-[4px] bg-[#393939] rounded-full mt-1"></div>
                 <div>
-                  <h3 className="text-[#393939] font-bold text-base mb-1">
+                  <h3 className="text-[#393939] font-bold text-sm md:text-base mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[#393939] font-light text-xs">
+                  <p className="text-[#393939] font-light text-xs md:text-sm">
                     {item.description}
                   </p>
                 </div>

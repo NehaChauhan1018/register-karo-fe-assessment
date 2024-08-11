@@ -29,3 +29,4 @@ const CardSolutions = ({ img, head, desc }) => {
 };
 
 export default CardSolutions;
+

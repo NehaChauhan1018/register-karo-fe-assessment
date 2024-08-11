@@ -8,6 +8,7 @@ import Virtual from "@/components/homePage/Virtual";
 import TrustedBy from "@/components/homePage/TrustedBy";
 import TestimonialsClient from "@/components/homePage/TestimonialsClient";
 import LowerFooter from "@/components/homePage/LowerFooter";
+import UpperFooter from "@/components/homePage/UpperFooter";
 
 const cardSolutionItems = [
   {
@@ -69,7 +70,10 @@ const Homepage = () => {
         <section className="bg-[#F5F5F5]">
           <TestimonialsClient />
         </section>
-        <LowerFooter />
+        <div>
+          <UpperFooter />
+          <LowerFooter />
+        </div>
       </div>
     </main>
   );
