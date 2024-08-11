@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-next::before,
+.slick-prev::before {
+  font-size: 56px !important;
+}
+
+.slick-prev {
+  left: -40px !important;
+}
+
+.slick-next {
+  right: -40px !important;
+}

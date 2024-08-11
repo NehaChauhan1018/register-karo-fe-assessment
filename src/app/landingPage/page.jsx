@@ -1,10 +1,18 @@
 import ContactForm from "@/components/landingPage/ContactForm";
 import EasySteps from "@/components/landingPage/easysteps/EasySteps";
 import React from "react";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/landingPage/Footer";
+import Testimonials from "@/components/Testimonials";
+import AboutContainer from "@/components/landingPage/AboutContainer";
+import Partners from "@/components/landingPage/Partners";
+import Navbar from "@/components/landingPage/Navbar";
 
 const LandingPage = () => {
   return (
     <div className="flex flex-col gap-6">
+      <Navbar />
+
       <section className="w-[95%] m-auto">
         <div className="bg-[url('/landingBg.png')] h-[717px] bg-no-repeat bg-cover grid grid-cols-3">
           <div className="col-span-2 pt-6 px-6 w-[80%] my-24 mx-auto text-white flex flex-col gap-6">
@@ -38,7 +46,17 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <EasySteps/>
+      <EasySteps />
+      <AboutContainer />
+      <Partners />
+      <div className="font-sans bg-gray-50 text-gray-900">
+        <main className="p-6">
+          <Testimonials />
+          <FAQ />
+        </main>
+
+        <Footer />
+      </div>
     </div>
   );
 };
